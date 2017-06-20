@@ -1,0 +1,97 @@
+html{
+	background-color: #88FFFF;
+}
+
+h1, h2, #gameBoard{
+	margin: 20px auto;
+}
+
+h1, h2{
+	text-align: center;
+}
+
+h1{
+	font-family: 'Bowlby One';
+}
+
+h2{
+	font-family: 'Passion One';
+}
+
+#gameBoard{
+	width: 80%;
+	min-height: 400px;
+	background-color: #4154FF;
+}
+
+.card{
+	width: 15%;
+	min-width: 100px;
+	height: 150px;
+	background-image: url("../images/danny.jpg");
+	background-size: cover;
+	background-position: center;
+	display: inline-block;
+	margin: .8%;
+	vertical-align: top;
+	line-height: 150px;
+	text-align: center;
+	color: #fff;
+	font-family: 'Roboto';
+	font-size: 36px;
+}
+
+/*.card:active{
+	transform: rotateY(180deg);
+	transition: 1s;
+}*/
+
+.result{
+	position: relative;
+	font-family: 'Bowlby One';
+	font-size: 25px;
+	display: inline-block;
+	width: 30%;
+	margin: 30px;
+	top: 50%;
+}
+
+.resultImage{
+	position: relative;
+	width: 40%;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 30px;
+	right: 20px;
+	top: 50%;
+}
+.reloadWin, .reloadLose{
+	position: relative;
+	display: block;
+	width: 200px;
+	background-color: #fff;
+	color: #2C2FFF;
+	font-size: 18px;
+	font-family: 'Roboto';
+	margin: 25px auto;
+	padding: 5px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+#win, #lose{
+	position: fixed;
+	text-align: center;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	height: 400px;
+	background-color: #7BFFFF;
+	border: 5px solid #2C2FFF;
+	border-radius: 25px;
+	padding: 15px;
+	margin: 20px auto;
+	z-index: 10;
+	display: none;
+}
