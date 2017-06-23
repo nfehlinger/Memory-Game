@@ -52,7 +52,7 @@ function flipCard(card, value, back){
 			ids.push(card.id);
 			ids.push(back.id);
 			if(values[0] == "Dennis" && values[1] == "Dennis"){
-				document.getElementById("lose").style.display = "block";
+				setTimeout(document.getElementById("lose").style.display = "block", 1000);
 				document.querySelector(".reloadLose").addEventListener("click", function(){
 					location.reload();
 				});
@@ -62,7 +62,7 @@ function flipCard(card, value, back){
 				values = [];
 				ids = [];
 				if(flipped == classArray.length - 2){
-					document.getElementById("win").style.display = "block";
+					setTimeout(document.getElementById("win").style.display = "block", 1000);
 				document.querySelector(".reloadWin").addEventListener("click", function(){
 					location.reload();
 				});
